@@ -1,0 +1,26 @@
+{
+    "name": "shopex/sso",
+    "description": "A Shopex User SSO Client.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "summer",
+            "email": "qihao@shopex.cn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shopex\\Sso\\":"src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "extra": {      
+        "laravel": {
+            "providers": [
+                "Shopex\\Sso\\ServiceProvider"
+            ]            
+        }    
+    }
+}
