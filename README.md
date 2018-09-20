@@ -19,7 +19,16 @@ use Shopex\Sso\ssoClient;
 
 //使用sdk获取登陆地址
 $client = new ssoClient();
+
+//获取登陆地址
 $url = $client->getLoginUrl('http://www.baidu.com');
+
+//获取登出地址
+$url = $client->getLogoutUrl($token,$redirect_url=null);
+
+//获取用户信息
+$user = $client->getUserInfo($code);
+
 echo $url;
 ```
 ## Contributing
