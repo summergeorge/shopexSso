@@ -7,17 +7,20 @@
 
 ```shell
 $ composer require shopex/sso -vvv
+
+$ php artisan vendor:publish --provider=Shopex\Sso\ServiceProvider
 ```
+然后在config/shopexss.php 中配置密钥相关信息
 
 ## Usage
 ```php
-    //use;
-    use Shopex\Sso\ssoClient;
+//use;
+use Shopex\Sso\ssoClient;
 
-    //使用sdk获取登陆地址
-    $client = new ssoClient();
-    $url = $client->getLoginUrl('http://www.baidu.com');
-    echo $url;
+//使用sdk获取登陆地址
+$client = new ssoClient();
+$url = $client->getLoginUrl('http://www.baidu.com');
+echo $url;
 ```
 ## Contributing
 

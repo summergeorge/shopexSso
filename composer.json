@@ -13,8 +13,7 @@
             "Shopex\\Sso\\":"src/"
         }
     },
-    "require": {
-        "guzzlehttp/guzzle": "^6.3"
+    "require": {     
     },
     "extra": {      
         "laravel": {
